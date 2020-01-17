@@ -7,8 +7,9 @@
 		"email": "brunohgv2@gmail.com",
 		"url": "https://github.com/brunohgv"
 	},
+	"publisher": "brunohgv",
 	"homepage": "https://github.com/brunohgv/string-converter",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"engines": {
 		"vscode": "^1.41.0"
 	},
