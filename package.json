@@ -17,7 +17,8 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.camelToKebab"
+		"onCommand:extension.camelToKebab",
+		"onCommand:extension.camelToSnake"
 	],
 	"main": "./extension.js",
 	"contributes": {
@@ -25,6 +26,10 @@
 			{
 				"command": "extension.camelToKebab",
 				"title": "Camel To Kebab"
+			},
+			{
+				"command": "extension.camelToSnake",
+				"title": "Camel To Snake"
 			}
 		]
 	},

@@ -1,7 +1,8 @@
 const vscode = require('vscode');
 const utils = require('./lib/utils')
 const {
-	camelToKebab
+	camelToKebab,
+	camelToSnake
 } = require ('./lib/stringOperations')
 
 /**
@@ -9,14 +10,20 @@ const {
  */
 function activate(context) {
 
-	let disposable = vscode.commands.registerCommand('extension.camelToKebab', function () {
-
+	let camelToKebabDisposable = vscode.commands.registerCommand('extension.camelToKebab', function () {
 		const selectedText = utils.getSelectedText();
 		utils.writeInSelection(camelToKebab(selectedText));
-
 	});
 
-	context.subscriptions.push(disposable);
+	let camelToSnakeDisposable = vscode.commands.registerCommand('extension.camelToSnake', function() {
+		const selectedText = utils.getSelectedText();
+		utils.writeInSelection(camelToSnake(selectedText));
+	})
+
+	context.subscriptions.push(
+		camelToKebabDisposable,
+		camelToSnakeDisposable
+	);
 }
 exports.activate = activate;
 
