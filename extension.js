@@ -3,7 +3,8 @@ const utils = require('./lib/utils')
 const {
 	camelToKebab,
 	camelToSnake,
-	camelToTitle
+	camelToTitle,
+	kebabToTitle
 } = require ('./lib/stringOperations')
 
 /**
@@ -26,10 +27,16 @@ function activate(context) {
 		utils.writeInSelection(camelToTitle(selectedText));
 	})
 
+	let kebabToTitleDisposable = vscode.commands.registerCommand('extension.kebabToTitle', function() {
+		const selectedText = utils.getSelectedText();
+		utils.writeInSelection(kebabToTitle(selectedText));
+	})
+
 	context.subscriptions.push(
 		camelToKebabDisposable,
 		camelToSnakeDisposable,
-		camelToTitleDisposable
+		camelToTitleDisposable,
+		kebabToTitleDisposable
 	);
 }
 exports.activate = activate;

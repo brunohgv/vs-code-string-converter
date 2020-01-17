@@ -8,9 +8,9 @@
 		"url": "https://github.com/brunohgv"
 	},
 	"publisher": "brunohgv",
-	"homepage": "https://github.com/brunohgv/string-converter",
+	"homepage": "https://github.com/brunohgv/vs-code-string-converter",
 	"repository": {
-		"url": "https://github.com/brunohgv/string-converter"
+		"url": "https://github.com/brunohgv/vs-code-string-converter"
 	},
 	"version": "0.1.1",
 	"engines": {
@@ -22,7 +22,8 @@
 	"activationEvents": [
 		"onCommand:extension.camelToKebab",
 		"onCommand:extension.camelToSnake",
-		"onCommand:extension.camelToTitle"
+		"onCommand:extension.camelToTitle",
+		"onCommand:extension.kebabToTitle"
 	],
 	"main": "./extension.js",
 	"contributes": {
@@ -38,6 +39,10 @@
 			{
 				"command": "extension.camelToTitle",
 				"title": "Camel To Title"
+			},
+			{
+				"command": "extension.kebabToTitle",
+				"title": "Kebab To Title"
 			}
 		]
 	},

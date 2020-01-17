@@ -12,9 +12,14 @@ String Converter
 
 ⇧ + (⌘ or ctrl) + P > "Camel To Title" - Converts a `camelCase` string into a `Title Case` string
 
+⇧ + (⌘ or ctrl) + P > "Kebab To Title" - Converts a `kebab-case` string into a `Title Case` string
 
 ## Release Notes
 
+### 0.2.0
+
+* Added the conversion "Kebab To Title"
+** ⇧ + ⌘ + P > "Kebab To Title" - Converts a `kebab-case` string into a `Title Case` string
 
 ### 0.1.0
 
