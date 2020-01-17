@@ -1,6 +1,6 @@
-# string-converter README
+# String Converter
 
-This is the README for your extension "string-converter". After writing up a brief description, we recommend including the following sections.
+String Converter
 
 ## Features
 
@@ -8,7 +8,7 @@ This is the README for your extension "string-converter". After writing up a bri
 
 ## Release Notes
 
-### 0.0.10
+### 0.0.11
 
 * Added the conversion "Camel To Kebab"
 ** ⇧ + ⌘ + P > "Camel To Kebab" - Converts a `camelCase` string into a `kebab-case` string
