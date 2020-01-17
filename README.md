@@ -2,6 +2,8 @@
 
 String Converter
 
+[Download to your VS Code HERE](https://marketplace.visualstudio.com/items?itemName=brunohgv.vscode-string-converter)
+
 ## Features
 
 ⇧ + (⌘ or ctrl) + P > "Camel To Kebab" - Converts a `camelCase` string into a `kebab-case` string
