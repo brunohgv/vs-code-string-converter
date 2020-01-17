@@ -2,7 +2,8 @@ const vscode = require('vscode');
 const utils = require('./lib/utils')
 const {
 	camelToKebab,
-	camelToSnake
+	camelToSnake,
+	camelToTitle
 } = require ('./lib/stringOperations')
 
 /**
@@ -20,9 +21,15 @@ function activate(context) {
 		utils.writeInSelection(camelToSnake(selectedText));
 	})
 
+	let camelToTitleDisposable = vscode.commands.registerCommand('extension.camelToTitle', function() {
+		const selectedText = utils.getSelectedText();
+		utils.writeInSelection(camelToTitle(selectedText));
+	})
+
 	context.subscriptions.push(
 		camelToKebabDisposable,
-		camelToSnakeDisposable
+		camelToSnakeDisposable,
+		camelToTitleDisposable
 	);
 }
 exports.activate = activate;
