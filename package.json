@@ -1,7 +1,13 @@
 {
-	"name": "string-converter",
-	"displayName": "string-converter",
+	"name": "vscode-string-converter",
+	"displayName": "VSCode String Converter",
 	"description": "This extension converts the selected strings to a specific format",
+	"author": {
+		"name": "Bruno Vasconcelos",
+		"email": "brunohgv2@gmail.com",
+		"url": "https://github.com/brunohgv"
+	},
+	"homepage": "https://github.com/brunohgv/string-converter",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.41.0"
