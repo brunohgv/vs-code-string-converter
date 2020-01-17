@@ -8,7 +8,7 @@ This is the README for your extension "string-converter". After writing up a bri
 
 ## Release Notes
 
-### 0.0.4
+### 0.0.8
 
 * Added the conversion "Camel To Kebab"
 ** ⇧ + ⌘ + P > "Camel To Kebab" - Converts a `camelCase` string into a `kebab-case` string
