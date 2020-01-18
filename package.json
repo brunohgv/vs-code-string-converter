@@ -25,7 +25,9 @@
 		"onCommand:extension.camelToTitle",
 		"onCommand:extension.kebabToCamel",
 		"onCommand:extension.kebabToSnake",
-		"onCommand:extension.kebabToTitle"
+		"onCommand:extension.kebabToTitle",
+		"onCommand:extension.toLower",
+		"onCommand:extension.toUpper"
 	],
 	"main": "./extension.js",
 	"contributes": {
@@ -53,6 +55,14 @@
 			{
 				"command": "extension.kebabToTitle",
 				"title": "Kebab To Title"
+			},
+			{
+				"command": "extension.toLower",
+				"title": "To Lower Case"
+			},
+			{
+				"command": "extension.toUpper",
+				"title": "To Upper Case"
 			}
 		]
 	},

@@ -8,25 +8,29 @@ String Converter
 
 ## Features
 
-⇧ + (⌘ or ctrl) + P > "Camel To Kebab" - Converts a `camelCase` string into a `kebab-case` string
+⇧ + (⌘ or ctrl) + P
 
-⇧ + (⌘ or ctrl) + P > "Camel To Snake" - Converts a `camelCase` string into a `snake_case` string
-
-⇧ + (⌘ or ctrl) + P > "Camel To Title" - Converts a `camelCase` string into a `Title Case` string
-
-⇧ + (⌘ or ctrl) + P > "Kebab To Camel" - Converts a `kebab-case` string into a `camelCase` string
-
-⇧ + (⌘ or ctrl) + P > "Kebab To Snake" - Converts a `kebab-case` string into a `snake_case` string
-
-⇧ + (⌘ or ctrl) + P > "Kebab To Title" - Converts a `kebab-case` string into a `Title Case` string
+* "Camel To Kebab" - Converts a `camelCase` string into a `kebab-case` string
+* "Camel To Snake" - Converts a `camelCase` string into a `snake_case` string
+* "Camel To Title" - Converts a `camelCase` string into a `Title Case` string
+* "Kebab To Camel" - Converts a `kebab-case` string into a `camelCase` string
+* "Kebab To Snake" - Converts a `kebab-case` string into a `snake_case` string
+* "Kebab To Title" - Converts a `kebab-case` string into a `Title Case` string
+* "To Lower Case" - Converts a string to lower case
+* "To Upper Case" - Converts a string to upper case
 
 
 ## Release Notes
 
+### 0.5.0
+
+* Added "To Lower Case" and "To Upper Case" conversions
+  * ⇧ + ⌘ + P > "To Lower Case" - Converts a string to lower case
+  * ⇧ + ⌘ + P > "To Upper Case" - Converts a string to upper case
+
 ### 0.4.0
 
 * Added the conversion "Kebab To Snake"
-
   * ⇧ + ⌘ + P > "Kebab To Snake" - Converts a `kebab-case` string into a `snake_case` string
 
 ### 0.3.0
