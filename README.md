@@ -14,9 +14,16 @@ String Converter
 
 ⇧ + (⌘ or ctrl) + P > "Kebab To Camel" - Converts a `kebab-case` string into a `camelCase` string
 
+⇧ + (⌘ or ctrl) + P > "Kebab To Snake" - Converts a `kebab-case` string into a `snake_case` string
+
 ⇧ + (⌘ or ctrl) + P > "Kebab To Title" - Converts a `kebab-case` string into a `Title Case` string
 
 ## Release Notes
+
+### 0.4.0
+
+* Added the conversion "Kebab To Snake"
+** ⇧ + ⌘ + P > "Kebab To Snake" - Converts a `kebab-case` string into a `snake_case` string
 
 ### 0.3.0
 

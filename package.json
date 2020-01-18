@@ -24,6 +24,7 @@
 		"onCommand:extension.camelToSnake",
 		"onCommand:extension.camelToTitle",
 		"onCommand:extension.kebabToCamel",
+		"onCommand:extension.kebabToSnake",
 		"onCommand:extension.kebabToTitle"
 	],
 	"main": "./extension.js",
@@ -44,6 +45,10 @@
 			{
 				"command": "extension.kebabToCamel",
 				"title": "Kebab To Camel"
+			},
+			{
+				"command": "extension.kebabToSnake",
+				"title": "Kebab To Snake"
 			},
 			{
 				"command": "extension.kebabToTitle",

@@ -5,6 +5,7 @@ const {
 	camelToSnake,
 	camelToTitle,
 	kebabToTitle,
+	kebabToSnake,
 	kebabToCamel
 } = require ('./lib/stringOperations')
 
@@ -33,6 +34,11 @@ function activate(context) {
 		utils.writeInSelection(kebabToCamel(selectedText));
 	})
 
+	let kebabToSnakeDisposable = vscode.commands.registerCommand('extension.kebabToSnake', function() {
+		const selectedText = utils.getSelectedText();
+		utils.writeInSelection(kebabToSnake(selectedText));
+	})
+
 	let kebabToTitleDisposable = vscode.commands.registerCommand('extension.kebabToTitle', function() {
 		const selectedText = utils.getSelectedText();
 		utils.writeInSelection(kebabToTitle(selectedText));
@@ -43,6 +49,7 @@ function activate(context) {
 		camelToSnakeDisposable,
 		camelToTitleDisposable,
 		kebabToCamelDisposable,
+		kebabToSnakeDisposable,
 		kebabToTitleDisposable,
 	);
 }

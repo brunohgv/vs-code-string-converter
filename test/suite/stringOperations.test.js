@@ -4,6 +4,7 @@ const {
     camelToSnake,
     camelToTitle,
     kebabToCamel,
+    kebabToSnake,
     kebabToTitle,
 } = require('../../lib/stringOperations')
 
@@ -26,6 +27,11 @@ suite('String Operations Suite', () => {
     test('Kebab to Camel test', () => {
         assert.equal(kebabToCamel('my-new-string'), 'myNewString');
         assert.equal(kebabToCamel('hello-world'), 'helloWorld');
+    })
+
+    test('Kebab to Snake test', () => {
+        assert.equal(kebabToSnake('my-new-string'), 'my_new_string');
+        assert.equal(kebabToSnake('hello-world'), 'hello_world');
     })
 
     test('Kebab to Title test', () => {
