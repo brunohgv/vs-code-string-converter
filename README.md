@@ -2,6 +2,8 @@
 
 String Converter
 
+![extension working](https://media-exp2.licdn.com/dms/image/C4E22AQGgRCwOa8L-kA/feedshare-shrink_800/0?e=1582156800&v=beta&t=IMPAN6Wc5k_Xpyxh8DF_jQeuvpks9gc-7Ra-jppLX2I)
+
 [Download to your VS Code HERE](https://marketplace.visualstudio.com/items?itemName=brunohgv.vscode-string-converter)
 
 ## Features
