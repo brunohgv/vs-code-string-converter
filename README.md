@@ -1,6 +1,7 @@
-# String Converter
-
-String Converter
+<div style="text-align:center">
+    <img src="https://i.ibb.co/QnpSdMj/9f2a6d73-6fd7-4f31-9caa-b68850f7f98a-200x200.png" />
+    <h1>String Converter</h1>
+</div>
 
 ![extension working](https://media-exp2.licdn.com/dms/image/C4E22AQGgRCwOa8L-kA/feedshare-shrink_800/0?e=1582156800&v=beta&t=IMPAN6Wc5k_Xpyxh8DF_jQeuvpks9gc-7Ra-jppLX2I)
 
