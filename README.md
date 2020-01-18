@@ -52,9 +52,9 @@ String Converter
 * Added the conversion "Camel To Kebab"
   * ⇧ + ⌘ + P > "Camel To Kebab" - Converts a `camelCase` string into a `kebab-case` string
 
------------------------------------------------------------------------------------------------------------
-## Found a bug or?
+----
+## Found a bug or have any suggestion?
 
-contact me: brunohgv2@gmail.com
+Contact me: brunohgv2@gmail.com
 
 Or open an issue in the [repo](https://github.com/brunohgv/vs-code-string-converter)
