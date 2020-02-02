@@ -13,7 +13,7 @@
 		"url": "https://github.com/brunohgv/vs-code-string-converter"
 	},
 	"icon": "images/string_converter_logo.png",
-	"version": "0.5.0",
+	"version": "0.5.2",
 	"engines": {
 		"vscode": "^1.41.0"
 	},
