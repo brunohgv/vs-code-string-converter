@@ -22,6 +22,7 @@ suite('String Operations Suite', () => {
     test('Camel to Title test', () => {
         assert.equal(camelToTitle('myNewString'), 'My New String');
         assert.equal(camelToTitle('helloWorld'), 'Hello World');
+        assert.equal(camelToTitle('HelloWorld'), 'Hello World')
     })
 
     test('Kebab to Camel test', () => {
