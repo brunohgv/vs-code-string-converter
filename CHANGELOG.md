@@ -1,6 +1,6 @@
 # Change Log
 
-### 0.5.1
+### 0.5.2
 
 * Fixed a Bug in "Camel to Title" operation
 
