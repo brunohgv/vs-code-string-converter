@@ -1,5 +1,14 @@
 # Change Log
 
+### 0.5.4
+
+* Fixed a Bug in "Camel to Kebab" operation
+  * Strings like ThisString was being converted to -this-string.
+  * Now it is conveting to this-string
+* Fixed a Bug in "Camel to Snake" operation
+  * Strings like ThisString was being converted to _this_string.
+  * Now it is conveting to this_string
+
 ### 0.5.2
 
 * Fixed a Bug in "Camel to Title" operation
