@@ -13,7 +13,7 @@
 		"url": "https://github.com/brunohgv/vs-code-string-converter"
 	},
 	"icon": "images/string_converter_logo.png",
-	"version": "0.5.3",
+	"version": "0.6.0",
 	"engines": {
 		"vscode": "^1.41.0"
 	},
@@ -27,6 +27,7 @@
 		"onCommand:extension.kebabToCamel",
 		"onCommand:extension.kebabToSnake",
 		"onCommand:extension.kebabToTitle",
+		"onCommand:extension.titleToCamel",
 		"onCommand:extension.toLower",
 		"onCommand:extension.toUpper"
 	],
@@ -56,6 +57,10 @@
 			{
 				"command": "extension.kebabToTitle",
 				"title": "Kebab To Title"
+			},
+			{
+				"command": "extension.titleToCamel",
+				"title": "Title to Camel"
 			},
 			{
 				"command": "extension.toLower",
