@@ -17,11 +17,23 @@
 * "Kebab To Camel" - Converts a `kebab-case` string into a `camelCase` string
 * "Kebab To Snake" - Converts a `kebab-case` string into a `snake_case` string
 * "Kebab To Title" - Converts a `kebab-case` string into a `Title Case` string
+* "Title To Camel" - Converts a `Title Case` string into a `camelCase` string
+* "Title To Kebab" - Converts a `Title Case` string into a `kebab-case` string
 * "To Lower Case" - Converts a string to lower case
 * "To Upper Case" - Converts a string to upper case
 
 
 ## Release Notes
+
+### 0.7.0
+
+* Added "Title To Kebab" conversion
+  * ⇧ + ⌘ + P > "Title To Kebab" - Converts a `Title Case` string into a `kebab-case` string
+
+### 0.6.0
+
+* Added "Title To Camel" conversion
+  * ⇧ + ⌘ + P > "Title To Camel" - Converts a `Title Case` string into a `camelCase` string
 
 ### 0.5.0
 

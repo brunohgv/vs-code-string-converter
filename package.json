@@ -63,6 +63,10 @@
 				"title": "Title to Camel"
 			},
 			{
+				"command": "extension.titleToKebab",
+				"title": "Title to Kebab"
+			},
+			{
 				"command": "extension.toLower",
 				"title": "To Lower Case"
 			},
