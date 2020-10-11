@@ -8,6 +8,7 @@ const {
 	kebabToSnake,
 	kebabToCamel,
 	titleToCamel,
+	titleToSnake,
 	titleToKebab,
 	toLower,
 	toUpper,
@@ -53,6 +54,11 @@ function activate(context) {
 		utils.writeInSelection(titleToCamel(selectedText));
 	})
 
+	let titleToSnakeDisposable = vscode.commands.registerCommand('extension.titleToSnake', function() {
+		const selectedText = utils.getSelectedText();
+		utils.writeInSelection(titleToSnake(selectedText));
+	})
+
 	let titleToKebabDisposable = vscode.commands.registerCommand('extension.titleToKebab', function() {
 		const selectedText = utils.getSelectedText();
 		utils.writeInSelection(titleToKebab(selectedText));
@@ -76,6 +82,7 @@ function activate(context) {
 		kebabToSnakeDisposable,
 		kebabToTitleDisposable,
 		titleToCamelDisposable,
+		titleToSnakeDisposable,
 		titleToKebabDisposable,
 		toLowerDisposable,
 		toUpperDisposable

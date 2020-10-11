@@ -49,6 +49,12 @@ suite('String Operations Suite', () => {
         assert.equal(titleToCamel('  Hello World  '), 'helloWorld');
     })
 
+    test('Title to Snake test', () => {
+        assert.equal(titleToCamel('My New String'), 'my_new_string');
+        assert.equal(titleToCamel('Hello world'), 'hello_world');
+        assert.equal(titleToCamel('  Hello World  '), 'hello_world');
+    })
+
     test('Title to Kebab test', () => {
         assert.equal(titleToCamel('My New String'), 'my-new-string');
         assert.equal(titleToCamel('Hello world'), 'hello-world');
