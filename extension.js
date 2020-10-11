@@ -8,6 +8,7 @@ const {
 	kebabToSnake,
 	kebabToCamel,
 	titleToCamel,
+	titleToKebab,
 	toLower,
 	toUpper,
 } = require ('./lib/stringOperations')
@@ -52,6 +53,11 @@ function activate(context) {
 		utils.writeInSelection(titleToCamel(selectedText));
 	})
 
+	let titleToKebabDisposable = vscode.commands.registerCommand('extension.titleToKebab', function() {
+		const selectedText = utils.getSelectedText();
+		utils.writeInSelection(titleToKebab(selectedText));
+	})
+
 	let toLowerDisposable = vscode.commands.registerCommand('extension.toLower', function() {
 		const selectedText = utils.getSelectedText();
 		utils.writeInSelection(toLower(selectedText));
@@ -70,8 +76,9 @@ function activate(context) {
 		kebabToSnakeDisposable,
 		kebabToTitleDisposable,
 		titleToCamelDisposable,
+		titleToKebabDisposable,
 		toLowerDisposable,
-		toUpperDisposable,
+		toUpperDisposable
 	);
 }
 exports.activate = activate;
