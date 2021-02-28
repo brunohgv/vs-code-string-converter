@@ -1,13 +1,6 @@
 const vscode = require('vscode');
 const utils = require('./lib/utils')
-const {
-	toLower,
-	toUpper,
-	toCamel,
-	toKebab,
-	toSnake,
-	toTitle,
-} = require ('./lib/stringOperations')
+const operations = require ('./lib/stringOperations')
 
 /**
  * @param {vscode.ExtensionContext} context
@@ -15,58 +8,47 @@ const {
 function activate(context) {
 
 	let camelToKebabDisposable = vscode.commands.registerCommand('extension.camelToKebab', function () {
-		const selectedText = utils.getSelectedText();
-		utils.writeInSelection(toKebab(selectedText));
+		utils.applyToAllSelections(operations.camelToKebab);
 	});
 
 	let camelToSnakeDisposable = vscode.commands.registerCommand('extension.camelToSnake', function() {
-		const selectedText = utils.getSelectedText();
-		utils.writeInSelection(toSnake(selectedText));
+		utils.applyToAllSelections(operations.camelToSnake);
 	})
 
 	let camelToTitleDisposable = vscode.commands.registerCommand('extension.camelToTitle', function() {
-		const selectedText = utils.getSelectedText();
-		utils.writeInSelection(toTitle(selectedText));
+		utils.applyToAllSelections(operations.camelToTitle);
 	})
 
 	let kebabToCamelDisposable = vscode.commands.registerCommand('extension.kebabToCamel', function() {
-		const selectedText = utils.getSelectedText();
-		utils.writeInSelection(toCamel(selectedText));
+		utils.applyToAllSelections(operations.kebabToCamel);
 	})
 
 	let kebabToSnakeDisposable = vscode.commands.registerCommand('extension.kebabToSnake', function() {
-		const selectedText = utils.getSelectedText();
-		utils.writeInSelection(toSnake(selectedText));
+		utils.applyToAllSelections(operations.kebabToSnake);
 	})
 
 	let kebabToTitleDisposable = vscode.commands.registerCommand('extension.kebabToTitle', function() {
-		const selectedText = utils.getSelectedText();
-		utils.writeInSelection(toTitle(selectedText));
+		utils.applyToAllSelections(operations.kebabToTitle);
 	})
 
 	let titleToCamelDisposable = vscode.commands.registerCommand('extension.titleToCamel', function() {
-		const selectedText = utils.getSelectedText();
-		utils.writeInSelection(toCamel(selectedText));
+		utils.applyToAllSelections(operations.titleToCamel);
 	})
 
 	let titleToSnakeDisposable = vscode.commands.registerCommand('extension.titleToSnake', function() {
-		const selectedText = utils.getSelectedText();
-		utils.writeInSelection(toSnake(selectedText));
+		utils.applyToAllSelections(operations.titleToSnake);
 	})
 
 	let titleToKebabDisposable = vscode.commands.registerCommand('extension.titleToKebab', function() {
-		const selectedText = utils.getSelectedText();
-		utils.writeInSelection(toKebab(selectedText));
+		utils.applyToAllSelections(operations.titleToKebab);
 	})
 
 	let toLowerDisposable = vscode.commands.registerCommand('extension.toLower', function() {
-		const selectedText = utils.getSelectedText();
-		utils.writeInSelection(toLower(selectedText));
+		utils.applyToAllSelections(operations.toLower);
 	})
 
 	let toUpperDisposable = vscode.commands.registerCommand('extension.toUpper', function() {
-		const selectedText = utils.getSelectedText();
-		utils.writeInSelection(toUpper(selectedText));
+		utils.applyToAllSelections(operations.toUpper);
 	})
 
 	context.subscriptions.push(
@@ -80,14 +62,7 @@ function activate(context) {
 		titleToSnakeDisposable,
 		titleToKebabDisposable,
 		toLowerDisposable,
-		toUpperDisposable,
+		toUpperDisposable
 	);
 }
 exports.activate = activate;
-
-function deactivate() {}
-
-module.exports = {
-	activate,
-	deactivate
-}
