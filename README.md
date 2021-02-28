@@ -26,6 +26,12 @@
 
 ## Release Notes
 
+### 0.9.0
+
+* Added multiselect support.
+  * Now the *VS Code String Converter* supports multiselection.
+  * You can now use this extension while using multicursor.
+
 ### 0.8.0
 
 * Added "Title To Snake" conversion
