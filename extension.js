@@ -43,6 +43,18 @@ function activate(context) {
 		utils.applyToAllSelections(operations.titleToKebab);
 	})
 
+	let snakeToCamelDisposable = vscode.commands.registerCommand('extension.snakeToCamel', function() {
+		utils.applyToAllSelections(operations.snakeToCamel);
+	})
+
+	let snakeToTitleDisposable = vscode.commands.registerCommand('extension.snakeToTitle', function() {
+		utils.applyToAllSelections(operations.snakeToTitle);
+	})
+
+	let snakeToKebabDisposable = vscode.commands.registerCommand('extension.snakeToKebab', function() {
+		utils.applyToAllSelections(operations.snakeToKebab);
+	})
+
 	let toLowerDisposable = vscode.commands.registerCommand('extension.toLower', function() {
 		utils.applyToAllSelections(operations.toLower);
 	})
@@ -61,6 +73,9 @@ function activate(context) {
 		titleToCamelDisposable,
 		titleToSnakeDisposable,
 		titleToKebabDisposable,
+		snakeToCamelDisposable,
+		snakeToTitleDisposable,
+		snakeToKebabDisposable,
 		toLowerDisposable,
 		toUpperDisposable
 	);
