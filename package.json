@@ -73,6 +73,18 @@
 				"title": "Title to Kebab"
 			},
 			{
+				"command": "extension.snakeToCamel",
+				"title": "Snake to Camel"
+			},
+			{
+				"command": "extension.snakeToTitle",
+				"title": "Snake to Title"
+			},
+			{
+				"command": "extension.snakeToKebab",
+				"title": "Snake to Kebab"
+			},
+			{
 				"command": "extension.toLower",
 				"title": "To Lower Case"
 			},
