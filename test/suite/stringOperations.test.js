@@ -14,6 +14,7 @@ const {
     snakeToTitle,
     toLower,
     toUpper,
+    toSnake,
 } = require('../../lib/stringOperations')
 
 suite('String Operations Suite', () => {
@@ -100,5 +101,14 @@ suite('String Operations Suite', () => {
         assert.strictEqual(toLower('  hello_world  '), '  hello_world  ');
         assert.strictEqual(toLower('My New String'), 'my new string');
         assert.strictEqual(toLower('MY NEW STRING'), 'my new string');
+    })
+
+    test('to snake', () => {
+        assert.strictEqual(toSnake('my_new_string'), 'my_new_string');
+        assert.strictEqual(toSnake('hello-world'), 'hello_world');
+        assert.strictEqual(toSnake('  hello_world  '), 'hello_world');
+        assert.strictEqual(toSnake('My New String'), 'my_new_string');
+        assert.strictEqual(toSnake('MY NEW STRING'), 'my_new_string');
+        assert.strictEqual(toSnake('thisIsMyString'), 'this_is_my_string');
     })
 });
