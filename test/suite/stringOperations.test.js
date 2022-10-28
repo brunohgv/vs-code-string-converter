@@ -17,6 +17,7 @@ const {
     toSnake,
     toKebab,
     toCamelCase,
+    toTitleCase,
 } = require('../../lib/stringOperations')
 
 suite('String Operations Suite', () => {
@@ -130,5 +131,14 @@ suite('String Operations Suite', () => {
         assert.strictEqual(toCamelCase('My New String'), 'myNewString');
         assert.strictEqual(toCamelCase('MY NEW STRING'), 'myNewString');
         assert.strictEqual(toCamelCase('thisIsMyString'), 'thisIsMyString');
+    })
+
+    test('to title case', () => {
+        assert.strictEqual(toTitleCase('my_new_string'), 'MyNewString');
+        assert.strictEqual(toTitleCase('hello-world'), 'HelloWorld');
+        assert.strictEqual(toTitleCase('  hello_world  '), 'HelloWorld');
+        assert.strictEqual(toTitleCase('My New String'), 'MyNewString');
+        assert.strictEqual(toTitleCase('MY NEW STRING'), 'MyNewString');
+        assert.strictEqual(toTitleCase('thisIsMyString'), 'ThisIsMyString');
     })
 });
