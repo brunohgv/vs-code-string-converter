@@ -16,6 +16,7 @@ const {
     toUpper,
     toSnake,
     toKebab,
+    toCamelCase,
 } = require('../../lib/stringOperations')
 
 suite('String Operations Suite', () => {
@@ -120,5 +121,14 @@ suite('String Operations Suite', () => {
         assert.strictEqual(toKebab('My New String'), 'my-new-string');
         assert.strictEqual(toKebab('MY NEW STRING'), 'my-new-string');
         assert.strictEqual(toKebab('thisIsMyString'), 'this-is-my-string');
+    })
+
+    test('to camel case', () => {
+        assert.strictEqual(toCamelCase('my_new_string'), 'myNewString');
+        assert.strictEqual(toCamelCase('hello-world'), 'helloWorld');
+        assert.strictEqual(toCamelCase('  hello_world  '), 'helloWorld');
+        assert.strictEqual(toCamelCase('My New String'), 'myNewString');
+        assert.strictEqual(toCamelCase('MY NEW STRING'), 'myNewString');
+        assert.strictEqual(toCamelCase('thisIsMyString'), 'thisIsMyString');
     })
 });
