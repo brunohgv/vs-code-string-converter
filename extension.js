@@ -43,6 +43,10 @@ function activate(context) {
 		utils.applyToAllSelections(operations.titleToKebab);
 	})
 
+	let titleToDotDisposable = vscode.commands.registerCommand('extension.titleToDot', function() {
+		utils.applyToAllSelections(operations.titleToDot);
+	})
+
 	let snakeToCamelDisposable = vscode.commands.registerCommand('extension.snakeToCamel', function() {
 		utils.applyToAllSelections(operations.snakeToCamel);
 	})
@@ -73,6 +77,7 @@ function activate(context) {
 		titleToCamelDisposable,
 		titleToSnakeDisposable,
 		titleToKebabDisposable,
+		titleToDotDisposable,
 		snakeToCamelDisposable,
 		snakeToTitleDisposable,
 		snakeToKebabDisposable,
