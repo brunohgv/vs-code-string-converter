@@ -30,6 +30,7 @@
 		"onCommand:extension.titleToCamel",
 		"onCommand:extension.titleToSnake",
 		"onCommand:extension.titleToKebab",
+		"onCommand:extension.titleToDot",
 		"onCommand:extension.toLower",
 		"onCommand:extension.toUpper"
 	],
@@ -71,6 +72,10 @@
 			{
 				"command": "extension.titleToKebab",
 				"title": "Title to Kebab"
+			},
+			{
+				"command": "extension.titleToDot",
+				"title": "Title to Dot"
 			},
 			{
 				"command": "extension.snakeToCamel",

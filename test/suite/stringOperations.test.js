@@ -9,6 +9,7 @@ const {
     titleToCamel,
     titleToSnake,
     titleToKebab,
+    titleToDot,
     snakeToCamel,
     snakeToKebab,
     snakeToTitle,
@@ -70,6 +71,12 @@ suite('String Operations Suite', () => {
         assert.strictEqual(titleToKebab('My New String'), 'my-new-string');
         assert.strictEqual(titleToKebab('Hello world'), 'hello-world');
         assert.strictEqual(titleToKebab('  Hello World  '), 'hello-world');
+    })
+
+    test('Title to Dot test', () => {
+        assert.strictEqual(titleToKebab('My New String'), 'my.new.string');
+        assert.strictEqual(titleToKebab('Hello world'), 'hello.world');
+        assert.strictEqual(titleToKebab('  Hello World  '), 'hello.world');
     })
 
     test('Snake to Camel test', () => {
